@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SocratesService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51769/SocratesService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51769/SocratesService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/socratesWsSOAP.Errores" />
+      <xsd:import schemaLocation="http://localhost:51769/SocratesService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51769/SocratesService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/socratesWsSOAP.Dominio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISocratesService_CrearAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearAlumno" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_CrearAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_CrearAlumno_ErroresExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/socratesWsSOAP.Errores" name="detail" element="q1:ErroresException" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ObtenerAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAlumno" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ObtenerAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ModificarAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarAlumno" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ModificarAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_EliminarAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAlumno" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_EliminarAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ListarAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarAlumno" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ListarAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_CrearDocente_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearDocente" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_CrearDocente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ObtenerDocente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDocente" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ObtenerDocente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ModificarDocente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarDocente" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ModificarDocente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_EliminarDocente_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarDocente" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_EliminarDocente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ListarDocente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDocente" />
+  </wsdl:message>
+  <wsdl:message name="ISocratesService_ListarDocente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDocenteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISocratesService">
+    <wsdl:operation name="CrearAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/CrearAlumno" message="tns:ISocratesService_CrearAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/CrearAlumnoResponse" message="tns:ISocratesService_CrearAlumno_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISocratesService/CrearAlumnoErroresExceptionFault" name="ErroresExceptionFault" message="tns:ISocratesService_CrearAlumno_ErroresExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/ObtenerAlumno" message="tns:ISocratesService_ObtenerAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/ObtenerAlumnoResponse" message="tns:ISocratesService_ObtenerAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/ModificarAlumno" message="tns:ISocratesService_ModificarAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/ModificarAlumnoResponse" message="tns:ISocratesService_ModificarAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/EliminarAlumno" message="tns:ISocratesService_EliminarAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/EliminarAlumnoResponse" message="tns:ISocratesService_EliminarAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/ListarAlumno" message="tns:ISocratesService_ListarAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/ListarAlumnoResponse" message="tns:ISocratesService_ListarAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearDocente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/CrearDocente" message="tns:ISocratesService_CrearDocente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/CrearDocenteResponse" message="tns:ISocratesService_CrearDocente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDocente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/ObtenerDocente" message="tns:ISocratesService_ObtenerDocente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/ObtenerDocenteResponse" message="tns:ISocratesService_ObtenerDocente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarDocente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/ModificarDocente" message="tns:ISocratesService_ModificarDocente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/ModificarDocenteResponse" message="tns:ISocratesService_ModificarDocente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDocente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/EliminarDocente" message="tns:ISocratesService_EliminarDocente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/EliminarDocenteResponse" message="tns:ISocratesService_EliminarDocente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarDocente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocratesService/ListarDocente" message="tns:ISocratesService_ListarDocente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocratesService/ListarDocenteResponse" message="tns:ISocratesService_ListarDocente_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISocratesService" type="tns:ISocratesService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearAlumno">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/CrearAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ErroresExceptionFault">
+        <soap:fault use="literal" name="ErroresExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAlumno">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/ObtenerAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarAlumno">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/ModificarAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAlumno">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/EliminarAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAlumno">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/ListarAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearDocente">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/CrearDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDocente">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/ObtenerDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarDocente">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/ModificarDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDocente">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/EliminarDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarDocente">
+      <soap:operation soapAction="http://tempuri.org/ISocratesService/ListarDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SocratesService">
+    <wsdl:port name="BasicHttpBinding_ISocratesService" binding="tns:BasicHttpBinding_ISocratesService">
+      <soap:address location="http://localhost:51769/SocratesService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

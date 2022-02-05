@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2cf155b8-8fb6-4e7c-a68b-42647f727bfd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51769/SocratesService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SocratesService.xsd" MetadataType="Schema" ID="3712aa12-5821-49c6-884e-bc4569918169" SourceId="1" SourceUrl="http://localhost:51769/SocratesService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SocratesService.wsdl" MetadataType="Wsdl" ID="1e6c0fe8-5b21-4326-9c2e-0943067db46b" SourceId="1" SourceUrl="http://localhost:51769/SocratesService.svc?wsdl" />
+    <MetadataFile FileName="SocratesService1.xsd" MetadataType="Schema" ID="632fa451-24b1-4a06-b263-0a7dbd307184" SourceId="1" SourceUrl="http://localhost:51769/SocratesService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SocratesService2.xsd" MetadataType="Schema" ID="8ea3073a-453c-4b25-9d65-d6ba9207ab06" SourceId="1" SourceUrl="http://localhost:51769/SocratesService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SocratesService3.xsd" MetadataType="Schema" ID="c5409075-d36b-4039-826b-98400a748474" SourceId="1" SourceUrl="http://localhost:51769/SocratesService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SocratesService.disco" MetadataType="Disco" ID="9920562e-fe47-46aa-a43c-9aa557b3ac15" SourceId="1" SourceUrl="http://localhost:51769/SocratesService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

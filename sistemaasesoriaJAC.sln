@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sistemaasesoriaJAC", "sistemaasesoriaJAC\sistemaasesoriaJAC.csproj", "{61D8D501-5106-45C7-8FE9-FEBE5360C71E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3FD21D3F-D408-4284-B188-E18F252C6B65} = {3FD21D3F-D408-4284-B188-E18F252C6B65}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "socratesWsSOAP", "..\socratesWsSOAP\socratesWsSOAP\socratesWsSOAP.csproj", "{3FD21D3F-D408-4284-B188-E18F252C6B65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "platonWSREST", "platonWSREST\platonWSREST.csproj", "{02824FB1-9C5F-4FE6-B475-02C83D943434}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{61D8D501-5106-45C7-8FE9-FEBE5360C71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61D8D501-5106-45C7-8FE9-FEBE5360C71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61D8D501-5106-45C7-8FE9-FEBE5360C71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD21D3F-D408-4284-B188-E18F252C6B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD21D3F-D408-4284-B188-E18F252C6B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD21D3F-D408-4284-B188-E18F252C6B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD21D3F-D408-4284-B188-E18F252C6B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02824FB1-9C5F-4FE6-B475-02C83D943434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02824FB1-9C5F-4FE6-B475-02C83D943434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02824FB1-9C5F-4FE6-B475-02C83D943434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02824FB1-9C5F-4FE6-B475-02C83D943434}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

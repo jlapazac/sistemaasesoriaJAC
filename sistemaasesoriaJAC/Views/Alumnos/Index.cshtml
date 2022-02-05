@@ -1,0 +1,52 @@
+﻿@model IEnumerable<sistemaasesoriaJAC.SocratesWS.Alumno>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewData["Message"]</h2>
+<p>
+    @Html.ActionLink("Nuevo alumno", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @ViewBag.Titulo1
+        </th>
+        <th>
+            @ViewBag.Titulo2
+        </th>
+        <th>
+            @ViewBag.Titulo3
+        </th>
+        <th>
+            @ViewBag.Titulo4
+        </th>
+        <th>
+            @ViewBag.Titulo5
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor<modelItem => item.Codigoalumno>
+    </td>
+    <td>
+        @Html.DisplayFor<modelItem => item.Nombrealumno>
+    </td>
+    <td>
+        @Html.DisplayFor<modelItem => item.Apellidoalumno>
+    </td>
+    <td>
+        @Html.DisplayFor<modelItem => item.Dnialumno>
+    </td>
+    <td>
+        @Html.DisplayFor<modelItem => item.Correoalumno>
+    </td>
+    <td>
+        @Html.ActionLink("Editar","Edit", new { id = })
+    </td>
+</tr>
+    }
+</table>
+
